@@ -5,7 +5,18 @@ module.exports = {
   entry: './src/index.js',
   output: {
     filename: 'main.js',
-    path: outputPath
+    path: outputPath,
+  },
+  module: {
+    rules: [
+      {
+        test: /\.css$/,
+        use: [
+          'style-loader',
+          'css-loader',
+        ]
+      }
+    ]
   },
   devServer: {
     contentBase: outputPath
