@@ -21,5 +21,5 @@ function add_line {
 PROMPT_COMMAND='add_line'
 
 # プロンプトの設定
-export PS1='\[\e[3;37m\]\# \[\e[0;34m\]\w \[\e[0;35m\]\$\[\e[0;35m$(__git_ps1 "(%s)")\] \[\e[3;36m\]\D{%Y/%m/%d %I:%M}
+export PS1='\[\e[3;37m\]\# \[\e[0;34m\]\w \[\e[0;35m\]\$\[\e[0;35m$(__git_ps1 "(%s)")\] \[\e[3;36m\]\D{%Y/%m/%d %H:%M}
 \[\e[0;31m\]>\[\e[0;33m\]>\[\e[0;32m\]>\[\e[0m\] '
